@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font-Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Test Front-End</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="mobile-menu">
+            <img loading=lazy src="img/barras.svg" alt="mobile menu bars">
+        </div>
+        <a class="logo-container" href="#"><div class="logo">corebiz<span>.</span></div></a>
+        <div class="search-box">
+            <input type="text" id="search-box" placeholder="¿Qué estás buscando?">
+            <i class="fas fa-search icon"></i>
+        </div>
+        <div class="user">
+            <div class="account">
+                <i class="far fa-user icon"></i>
+                <p>Mi cuenta</p>
+            </div>
+             
+        </div> <!--User-->
+        <div class="shopping-menu">
+            <i class="fas fa-shopping-cart icon cart-icon"></i>
+            <div class="cart-counter">1</div>
+            <div class="shopping-cart">
+                <table id="cart-list">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <a href="#" id="empty-cart" class="btn-cart">Empty Cart</a>
+                </table>
+                
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Banner de la página -->
+    <section class="banner">
+        <div class="banner-text"><p class="top-text">¡Hola! ¿Qué es lo que buscas?</p><p class="bottom-text">Crear o migrar tu comercio electrónico?</p></div>
+    </section>
+    <!-- Fin Banner -->
+
+    <!-- Slider de Productos -->
+    <section class="products-slider">
+        
+        <!-- Slider main container -->
+        
+    </section>
+    <!-- Fin Slider de Productos -->
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>¡Únete a nuestras novedades y promociones!</h2>
+        <form class="news-form" method='POST' action="https://corebiz-test.herokuapp.com/api/v1/newsletter">
+            <input class="input" name="name" type="text" placeholder="Ingresa tu nombre">
+            <input class="input" name="email" type="email" placeholder="Ingresa tu e-mail">
+            <input type="submit" value="Suscribirme">
+        </form>
+        <p class="news-error">Por favor completar los datos</p>
+    </section>
+
+    <footer class="footer">
+        <div class="location">
+            <h3>Ubicación</h3>
+            <p>Avenida Andrómeda, 2000. Bloco 6 e 8 <br>
+               Alphavile SP <br>
+               brasil@corebiz.ag <br>
+               +55 11 3090 1039 <br>
+            </p>
+        </div>
+
+        <div class="contact">
+            <button class="contact-btn"><i class="fas fa-envelope"></i>Contáctanos</button>
+            <button class="speak-btn"><i class="fas fa-headphones-alt"></i>Habla con un  consultor</button>
+        </div>
+
+        <div class="company">
+            <div class="corebiz">
+                <p>Desarrolado por</p>
+                <img loading=lazy class="corebiz-img" src="img/corebiz.svg" alt="corebiz logo">
+            </div>
+            <div class="vtex">
+                <p>Powered by</p>
+                <img loading=lazy src="img/vtex.svg" alt="vtex logo">
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+    <!-- SwiperJs -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/9b8e3b6265.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
