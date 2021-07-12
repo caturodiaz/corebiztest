@@ -35,6 +35,7 @@ Los siguientes recursos fueron utilizados para la realización del proyecto:
 
 Ingresar al siguiente link: 
 
+https://boring-mcnulty-c91447.netlify.app/
 
 ## Consideraciones
 
